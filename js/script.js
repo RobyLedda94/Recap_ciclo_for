@@ -176,6 +176,27 @@ for (let i = 1; i <= 10; i++) {  // Definisco un ciclo di 10 iterazioni
 
 
 
+// Ex - 6 Contatore click sul pulsante
+
+
+// Dichiarazione delle variabili
+
+
+const ex_six_btnCount = document.getElementById('ex-6-btn-count'); // Bottone count
+
+
+const ex_six_btnReset = document.getElementById('ex-6-btn-reset'); // Bottone reset
+
+
+let ex_six_countMsg = document.getElementById('ex-6-count-msg'); // Elemento htlm msg
+
+
+// Debugging
+
+console.log(ex_six_btnCount, ex_six_btnReset, ex_six_countMsg);
+
+
+
 
 
 
