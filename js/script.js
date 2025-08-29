@@ -193,7 +193,27 @@ let ex_six_countMsg = document.getElementById('ex-6-count-msg'); // Elemento htl
 
 // Debugging
 
-console.log(ex_six_btnCount, ex_six_btnReset, ex_six_countMsg);
+console.log();
+
+
+
+// Gestione evento start
+
+ex_six_btnCount.addEventListener('click', function () {
+
+    console.log(ex_six_btnCount);
+
+});
+
+
+
+// Gestione evento reset
+
+ex_six_btnReset.addEventListener('click', function () {
+
+    console.log(ex_six_btnReset);
+
+});
 
 
 
