@@ -65,10 +65,15 @@ for (let i = 1; i <= 10; i++) { // Definisco un ciclo for di dieci iterazioni
 
     let ex_trhee_listItems = document.createElement('li'); // Creazione dei list items
 
+
     ex_trhee_listItems.innerHTML = `Elemento ${i}` // Inietto il contenuto ai list items
 
-    console.log(ex_trhee_listItems);
+
+    ex_three_ul.appendChild(ex_trhee_listItems);
 
 };
+
+
+
 
 
