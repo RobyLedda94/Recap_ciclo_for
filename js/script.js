@@ -59,3 +59,11 @@ console.log(ex_three_ul);
 // Logica di visualizazzione
 
 
+
+for (let i = 1; i <= 10; i++) { // Definisco un ciclo for di dieci iterazioni
+
+    console.log(i);
+
+};
+
+
