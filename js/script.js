@@ -96,7 +96,17 @@ console.log(ex_four_ul);
 
 for (let i = 1; i <= 10; i++) { // Definisco un ciclo for di 10 iterazioni
 
-    console.log(i);
+    // Definisco istruzione condizionale per determinare i numeri pari e dispari
+
+    if (i % 2 === 0) {
+
+        console.log(`${i} : pari`);
+
+    } else {
+
+        console.log(`${i} : dispari`);
+
+    };
 
 };
 
