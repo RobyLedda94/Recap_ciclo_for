@@ -1,7 +1,7 @@
 // Primi passi ciclo for
 
 
-// Ex-1 Stampare dei numeri dispari da 1 a 20
+// Ex - 1 Stampare dei numeri dispari da 1 a 20
 
 
 // Definisco il cilo for
@@ -20,7 +20,7 @@ for (let i = 1; i <= 20; i++) { // Contatore - condizione - incremento
 
 
 
-// Ex-2 Somma dei numeri da 1 a 100
+// Ex - 2 Somma dei numeri da 1 a 100
 
 
 
@@ -52,7 +52,7 @@ let ex_three_ul = document.getElementById('ex-1-ul'); // Elemento Ul Html
 
 // Debugging  
 
-console.log(ex_three_ul);
+console.log();
 
 
 
@@ -72,9 +72,17 @@ for (let i = 1; i <= 10; i++) { // Definisco un ciclo for di dieci iterazioni
     ex_three_ul.appendChild(ex_trhee_listItems); // appendo i list items creati alla lista Ul
 
 
-    ex_trhee_listItems.classList.add('p-5px', 'bg-darkBlue', 'txt-white');
+    ex_trhee_listItems.classList.add('p-5px', 'bg-darkBlue', 'txt-white'); // Class list
 
 };
+
+
+
+
+// Ex - 4 Creazione lista numerica nel DOM, colori i numeri pari di verde e quelli dispari di arancione
+
+
+
 
 
 
