@@ -191,6 +191,9 @@ const ex_six_btnReset = document.getElementById('ex-6-btn-reset'); // Bottone re
 let ex_six_countMsg = document.getElementById('ex-6-count-msg'); // Elemento htlm msg
 
 
+let count = 0;  // Variabile che tiene traccia dei click al bottone
+
+
 // Debugging
 
 console.log();
@@ -201,7 +204,8 @@ console.log();
 
 ex_six_btnCount.addEventListener('click', function () {
 
-    console.log(ex_six_btnCount);
+    count++; // Ogni volta che eseguo un click incremento
+
 
 });
 
