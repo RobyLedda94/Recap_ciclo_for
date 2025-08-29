@@ -82,6 +82,16 @@ for (let i = 1; i <= 10; i++) { // Definisco un ciclo for di dieci iterazioni
 // Ex - 4 Creazione lista numerica nel DOM, colori i numeri pari di verde e quelli dispari di arancione
 
 
+// Dichiarazione dell variabili
+
+let ex_four_ul = document.getElementById('ex-4-ul'); // Recupero la Ul da Dom
+
+
+// Debugging 
+
+console.log(ex_four_ul);
+
+
 
 
 
