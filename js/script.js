@@ -92,7 +92,7 @@ let ex_four_ul = document.getElementById('ex-4-ul'); // Ul Ex - 4
 
 // Debugging 
 
-console.log(ex_four_ul);
+console.log();
 
 
 // Logica di visualizazzione

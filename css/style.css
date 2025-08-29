@@ -7,7 +7,9 @@
 
 /* Layout */
 
-
+.content {
+    text-align: center;
+}
 
 
 /* Utility */
@@ -49,4 +51,19 @@
 /* BG */
 .bg-darkBlue {
     background-color: rgb(69 69 127);
+
+}
+
+
+
+
+
+/* Media query */
+
+@media screen and (min-width : 376px) {
+
+    .content {
+        text-align: left;
+    }
+
 }
