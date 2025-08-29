@@ -153,11 +153,13 @@ let ex_five_ul = document.getElementById('ex-5-ul'); // Ul Ex - 5
 
 for (let i = 1; i <= 10; i++) {  // Definisco un ciclo di 10 iterazioni
 
-    console.log(i); // Mostro in console il valore della variabile contatore
-
     let ex_five_molt = 5 * i; // Moltiplico ogni valore del contatore per 5
 
-    console.log(`5 x ${i} = ${ex_five_molt}`); // Mostro in console l'perazione effettuata e il risultato (template literals)
+    let ex_five_listItems = document.createElement('li'); // Creazione dei list items
+
+    console.log(ex_five_listItems);
+
+    // console.log(`5 x ${i} = ${ex_five_molt}`); // Mostro in console l'perazione effettuata e il risultato (template literals)
 
 };
 
