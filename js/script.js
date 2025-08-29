@@ -182,7 +182,10 @@ for (let i = 1; i <= 10; i++) {  // Definisco un ciclo di 10 iterazioni
 // Dichiarazione delle variabili
 
 
-const ex_six_btnCount = document.getElementById('ex-6-btn-count'); // Bottone count
+const ex_six_btnCountUp = document.getElementById('ex-6-btn-countUp'); // Bottone countUp
+
+
+const ex_six_btnCountDown = document.getElementById('ex-6-btn-countDown') // Bottone countDown
 
 
 const ex_six_btnReset = document.getElementById('ex-6-btn-reset'); // Bottone reset
@@ -196,16 +199,17 @@ let count = 0;  // Variabile che tiene traccia dei click al bottone
 
 // Debugging
 
-console.log();
+console.log(ex_six_btnCountDown);
 
 
 
 // Gestione evento start
 
-ex_six_btnCount.addEventListener('click', function () {
+ex_six_btnCountUp.addEventListener('click', function () {
 
     count++; // Ogni volta che eseguo un click incremento
 
+    ex_six_countMsg.innerHTML = count; // Inietto all'elemento msg il valore di count (incremento)
 
 });
 
@@ -215,7 +219,9 @@ ex_six_btnCount.addEventListener('click', function () {
 
 ex_six_btnReset.addEventListener('click', function () {
 
-    console.log(ex_six_btnReset);
+    count = 0 // Reset variabile contatore (riposto il valore a 0)
+
+    ex_six_countMsg.innerHTML = ''; // Reset del contenuto all'elemento di visualizazzione (html msg)
 
 });
 
