@@ -72,10 +72,10 @@ for (let i = 1; i <= 10; i++) { // Definisco un ciclo for di 10 iterazioni
     ex_three_ul.appendChild(ex_trhee_listItems); // appendo i list items creati alla lista Ul
 
 
-    ex_three_ul.classList.add('bg-darkBlue'); // Class List (ul)
+    ex_three_ul.classList.add('bg-darkBlue', 'txt-white'); // Class List (ul)
 
 
-    ex_trhee_listItems.classList.add('p-5px', 'txt-white'); // Class list (li)
+    ex_trhee_listItems.classList.add('p-5px'); // Class list (li)
 
 };
 
@@ -153,15 +153,29 @@ let ex_five_ul = document.getElementById('ex-5-ul'); // Ul Ex - 5
 
 for (let i = 1; i <= 10; i++) {  // Definisco un ciclo di 10 iterazioni
 
+
     let ex_five_molt = 5 * i; // Moltiplico ogni valore del contatore per 5
+
 
     let ex_five_listItems = document.createElement('li'); // Creazione dei list items
 
-    console.log(ex_five_listItems);
 
-    // console.log(`5 x ${i} = ${ex_five_molt}`); // Mostro in console l'perazione effettuata e il risultato (template literals)
+    ex_five_listItems.innerHTML = `5 x ${i} = ${ex_five_molt}` // Inietto l'oerazione effettuata e il risultato (template literals) ai list items
+
+
+    ex_five_ul.appendChild(ex_five_listItems); // Appendo i list items alla ul
+
+
+    ex_five_ul.classList.add('bg-darkBlue', 'txt-white'); // Classi css (ul)
+
+
+    ex_five_listItems.classList.add('p-5px'); // Classi css (li)
 
 };
+
+
+
+
 
 
 
