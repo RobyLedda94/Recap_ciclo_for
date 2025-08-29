@@ -96,17 +96,26 @@ console.log(ex_four_ul);
 
 for (let i = 1; i <= 10; i++) { // Definisco un ciclo for di 10 iterazioni
 
+    let ex_four_listItems = document.createElement('li'); // Creo l'elemento li html
+
+
     // Definisco istruzione condizionale per determinare i numeri pari e dispari
 
     if (i % 2 === 0) {
 
-        console.log(`${i} : pari`);
+
+        ex_four_listItems.innerHTML = `${i} : pari`; // Inietto il contenuto ai listItems
+
 
     } else {
 
-        console.log(`${i} : dispari`);
+
+        ex_four_listItems.innerHTML = `${i} : dispari`; // Inietto il contenuto ai listItems
+
 
     };
+
+    ex_four_ul.appendChild(ex_four_listItems); // Appendo i list items creati alla ul nel Dom
 
 };
 
