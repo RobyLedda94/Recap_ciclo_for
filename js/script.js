@@ -62,7 +62,12 @@ console.log(ex_three_ul);
 
 for (let i = 1; i <= 10; i++) { // Definisco un ciclo for di dieci iterazioni
 
-    console.log(i);
+
+    let ex_trhee_listItems = document.createElement('li'); // Creazione dei list items
+
+    ex_trhee_listItems.innerHTML = `Elemento ${i}` // Inietto il contenuto ai list items
+
+    console.log(ex_trhee_listItems);
 
 };
 
