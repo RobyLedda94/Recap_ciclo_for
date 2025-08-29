@@ -33,7 +33,7 @@
 
 /* TXT */
 .txt-white {
-    color: white;
+    color: white !important;
 }
 
 
