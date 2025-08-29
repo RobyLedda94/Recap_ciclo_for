@@ -92,6 +92,15 @@ let ex_four_ul = document.getElementById('ex-4-ul'); // Recupero la Ul da Dom
 console.log(ex_four_ul);
 
 
+// Logica di visualizazzione
+
+for (let i = 1; i <= 10; i++) { // Definisco un ciclo for di 10 iterazioni
+
+    console.log(i);
+
+};
+
+
 
 
 
