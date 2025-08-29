@@ -28,7 +28,7 @@ for (let i = 1; i <= 20; i++) { // Contatore - condizione - incremento
 let ex_two_somma = 0; // Dichiaro variabile somma
 
 
-for (let i = 1; i <= 100; i++) { // Ciclo for che genera numeri da 1 a 100
+for (let i = 1; i <= 100; i++) { // Definisco un ciclo for di 100 iterazioni
 
     ex_two_somma = ex_two_somma + i; // Aggiungo il valore di i alla somma
 
@@ -46,7 +46,7 @@ console.log(`La somma dei numeri da 1 a 100 è : ${ex_two_somma} `); // Stampo i
 // Dichiarazione delle variabili
 
 
-let ex_three_ul = document.getElementById('ex-3-ul'); // Elemento Ul Html
+let ex_three_ul = document.getElementById('ex-3-ul'); // Ul Ex - 3 
 
 
 
@@ -60,7 +60,7 @@ console.log();
 
 
 
-for (let i = 1; i <= 10; i++) { // Definisco un ciclo for di dieci iterazioni
+for (let i = 1; i <= 10; i++) { // Definisco un ciclo for di 10 iterazioni
 
 
     let ex_trhee_listItems = document.createElement('li'); // Creazione dei list items
@@ -72,10 +72,10 @@ for (let i = 1; i <= 10; i++) { // Definisco un ciclo for di dieci iterazioni
     ex_three_ul.appendChild(ex_trhee_listItems); // appendo i list items creati alla lista Ul
 
 
-    ex_three_ul.classList.add('bg-darkBlue'); // Class List
+    ex_three_ul.classList.add('bg-darkBlue'); // Class List (ul)
 
 
-    ex_trhee_listItems.classList.add('p-5px', 'txt-white'); // Class list
+    ex_trhee_listItems.classList.add('p-5px', 'txt-white'); // Class list (li)
 
 };
 
@@ -87,7 +87,7 @@ for (let i = 1; i <= 10; i++) { // Definisco un ciclo for di dieci iterazioni
 
 // Dichiarazione dell variabili
 
-let ex_four_ul = document.getElementById('ex-4-ul'); // Recupero la Ul da Dom
+let ex_four_ul = document.getElementById('ex-4-ul'); // Ul Ex - 4
 
 
 // Debugging 
@@ -99,7 +99,7 @@ console.log(ex_four_ul);
 
 for (let i = 1; i <= 10; i++) { // Definisco un ciclo for di 10 iterazioni
 
-    let ex_four_listItems = document.createElement('li'); // Creo l'elemento li html
+    let ex_four_listItems = document.createElement('li'); // Creazione dei list items
 
 
     // Definisco istruzione condizionale per determinare i numeri pari e dispari
@@ -132,6 +132,34 @@ for (let i = 1; i <= 10; i++) { // Definisco un ciclo for di 10 iterazioni
     ex_four_listItems.classList.add('p-5px'); // classi css (ul)
 
 };
+
+
+
+// Ex - 5 Stampare nel DOM la tabellina del 5 
+
+
+// Dichiarazione delle variabili 
+
+
+let ex_five_ul = document.getElementById('ex-5-ul'); // Ul Ex - 5
+
+
+
+// Debugging
+
+
+
+// Logica di visualizazzione 
+
+for (let i = 1; i <= 10; i++) {  // Definisco un ciclo di 10 iterazioni
+
+
+    let ex_five_molt = 5 * i; // variabile che esegue la moltiplicazione
+
+    console.log(`5 x ${i} = ${ex_five_molt}`);
+
+}
+
 
 
 
