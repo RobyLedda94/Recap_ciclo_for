@@ -69,7 +69,10 @@ for (let i = 1; i <= 10; i++) { // Definisco un ciclo for di dieci iterazioni
     ex_trhee_listItems.innerHTML = `Elemento ${i}` // Inietto il contenuto ai list items
 
 
-    ex_three_ul.appendChild(ex_trhee_listItems);
+    ex_three_ul.appendChild(ex_trhee_listItems); // appendo i list items creati alla lista Ul
+
+
+    ex_trhee_listItems.classList.add('p-5px', 'bg-darkBlue', 'txt-white');
 
 };
 

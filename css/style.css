@@ -13,14 +13,30 @@
 /* Utility */
 
 
+.p-5px {
+    padding: 5px;
+}
+
+.py-5 {
+    padding: 5px 0 5px 0;
+}
+
+
+
+
 /* Style */
+
+
+
 
 /* TXT */
 .txt-white {
     color: white;
 }
 
+
+
 /* BG */
-.bg-blue {
-    background-color: rgb(96, 96, 255);
+.bg-darkBlue {
+    background-color: rgb(69 69 127);
 }
