@@ -199,11 +199,11 @@ let count = 0;  // Variabile che tiene traccia dei click al bottone
 
 // Debugging
 
-console.log(ex_six_btnCountDown);
+console.log();
 
 
 
-// Gestione evento start
+// Gestione evento bottone incremento
 
 ex_six_btnCountUp.addEventListener('click', function () {
 
@@ -215,13 +215,25 @@ ex_six_btnCountUp.addEventListener('click', function () {
 
 
 
+// Gestione evento bottone decremento
+
+ex_six_btnCountDown.addEventListener('click', function () {
+
+    count--;
+
+    ex_six_countMsg.innerHTML = count;
+
+});
+
+
+
 // Gestione evento reset
 
 ex_six_btnReset.addEventListener('click', function () {
 
     count = 0 // Reset variabile contatore (riposto il valore a 0)
 
-    ex_six_countMsg.innerHTML = ''; // Reset del contenuto all'elemento di visualizazzione (html msg)
+    ex_six_countMsg.innerHTML = count; // Reset del contenuto all'elemento di visualizazzione (html msg)
 
 });
 
