@@ -46,7 +46,7 @@ console.log(`La somma dei numeri da 1 a 100 è : ${ex_two_somma} `); // Stampo i
 // Dichiarazione delle variabili
 
 
-let ex_three_ul = document.getElementById('ex-1-ul'); // Elemento Ul Html
+let ex_three_ul = document.getElementById('ex-3-ul'); // Elemento Ul Html
 
 
 
