@@ -44,3 +44,16 @@ console.log(`La somma dei numeri da 1 a 100 è : ${ex_two_somma} `); // Stampo i
 // Ex - 3 Lista di elementi del dom (creazione items ul)
 
 // Dichiarazione delle variabili
+
+
+let ex_three_ul = document.getElementById('ex-1-ul'); // Elemento Ul Html
+
+
+
+// Debugging  
+
+console.log(ex_three_ul);
+
+
+
+// Logica di viaializazzione
