@@ -72,7 +72,10 @@ for (let i = 1; i <= 10; i++) { // Definisco un ciclo for di dieci iterazioni
     ex_three_ul.appendChild(ex_trhee_listItems); // appendo i list items creati alla lista Ul
 
 
-    ex_trhee_listItems.classList.add('p-5px', 'bg-darkBlue', 'txt-white'); // Class list
+    ex_three_ul.classList.add('bg-darkBlue'); // Class List
+
+
+    ex_trhee_listItems.classList.add('p-5px', 'txt-white'); // Class list
 
 };
 
@@ -106,18 +109,31 @@ for (let i = 1; i <= 10; i++) { // Definisco un ciclo for di 10 iterazioni
 
         ex_four_listItems.innerHTML = `${i} : pari`; // Inietto il contenuto ai listItems
 
+        ex_four_listItems.classList.add('txt-dark-green'); // Class List (li)
+
 
     } else {
 
 
         ex_four_listItems.innerHTML = `${i} : dispari`; // Inietto il contenuto ai listItems
 
+        ex_four_listItems.classList.add('txt-dark-orange'); // Class list (li)
+
 
     };
 
+
     ex_four_ul.appendChild(ex_four_listItems); // Appendo i list items creati alla ul nel Dom
 
+
+    ex_four_ul.classList.add('bg-black'); // classi css (ul)
+
+
+    ex_four_listItems.classList.add('p-5px'); // classi css (ul)
+
 };
+
+
 
 
 
