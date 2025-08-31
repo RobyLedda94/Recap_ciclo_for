@@ -30,7 +30,9 @@ let ex_two_somma = 0; // Dichiaro variabile somma
 
 for (let i = 1; i <= 100; i++) { // Definisco un ciclo for di 100 iterazioni
 
+
     ex_two_somma = ex_two_somma + i; // Aggiungo il valore di i alla somma
+
 
 };
 
@@ -72,7 +74,7 @@ for (let i = 1; i <= 10; i++) { // Definisco un ciclo for di 10 iterazioni
     ex_three_ul.appendChild(ex_trhee_listItems); // appendo i list items creati alla lista Ul
 
 
-    ex_three_ul.classList.add('bg-darkBlue', 'txt-white'); // Class List (ul)
+    ex_three_ul.classList.add('bg-darkBlue', 'txt-white', 'list-unstyled'); // Class List (ul)
 
 
     ex_trhee_listItems.classList.add('p-5px'); // Class list (li)
@@ -101,6 +103,8 @@ for (let i = 1; i <= 10; i++) { // Definisco un ciclo for di 10 iterazioni
 
     let ex_four_listItems = document.createElement('li'); // Creazione dei list items
 
+    ex_four_listItems.classList = ''; // Reset preventivo classi css
+
 
     // Definisco istruzione condizionale per determinare i numeri pari e dispari
 
@@ -123,10 +127,12 @@ for (let i = 1; i <= 10; i++) { // Definisco un ciclo for di 10 iterazioni
     };
 
 
+
+
     ex_four_ul.appendChild(ex_four_listItems); // Appendo i list items creati alla ul nel Dom
 
 
-    ex_four_ul.classList.add('bg-black'); // classi css (ul)
+    ex_four_ul.classList.add('bg-black', 'list-unstyled'); // classi css (ul)
 
 
     ex_four_listItems.classList.add('p-5px'); // classi css (ul)
@@ -143,18 +149,21 @@ for (let i = 1; i <= 10; i++) { // Definisco un ciclo for di 10 iterazioni
 
 let ex_five_ul = document.getElementById('ex-5-ul'); // Ul Ex - 5
 
+let ex_five_molt = 0;
+
 
 
 // Debugging
 
-
+console.log();
 
 // Logica di visualizazzione 
 
 for (let i = 1; i <= 10; i++) {  // Definisco un ciclo di 10 iterazioni
 
 
-    let ex_five_molt = 5 * i; // Moltiplico ogni valore del contatore per 5
+    ex_five_molt = 5 * i; // Moltiplico ogni valore del contatore per 5
+
 
 
     let ex_five_listItems = document.createElement('li'); // Creazione dei list items
@@ -166,7 +175,7 @@ for (let i = 1; i <= 10; i++) {  // Definisco un ciclo di 10 iterazioni
     ex_five_ul.appendChild(ex_five_listItems); // Appendo i list items alla ul
 
 
-    ex_five_ul.classList.add('bg-darkBlue', 'txt-white'); // Classi css (ul)
+    ex_five_ul.classList.add('bg-darkBlue', 'txt-white', 'list-unstyled'); // Classi css (ul)
 
 
     ex_five_listItems.classList.add('p-5px'); // Classi css (li)
@@ -191,7 +200,7 @@ const ex_six_btnCountDown = document.getElementById('ex-6-btn-countDown') // Bot
 const ex_six_btnReset = document.getElementById('ex-6-btn-reset'); // Bottone reset
 
 
-let ex_six_countMsg = document.getElementById('ex-6-count-msg'); // Elemento htlm msg
+let ex_six_countUl = document.getElementById('ex-6-countUl'); // Elemento htlm msg
 
 
 let count = 0;  // Variabile che tiene traccia dei click al bottone
@@ -207,9 +216,22 @@ console.log();
 
 ex_six_btnCountUp.addEventListener('click', function () {
 
-    count++; // Ogni volta che eseguo un click incremento
 
-    ex_six_countMsg.innerHTML = count; // Inietto all'elemento msg il valore di count (incremento)
+
+    let ex_six_listItems = document.createElement('li'); // Ad ogni click creo un list items
+
+
+    ex_six_listItems.innerHTML = `Elemento ${count++}`; // Inietto il valore di coutn ai list items creati (template literals)
+
+
+    ex_six_countUl.appendChild(ex_six_listItems); // Appendo i list items alla Ul
+
+
+    ex_six_countUl.classList.add('bg-darkBlue', 'txt-white', 'list-unstyled'); // Classi css (ul)
+
+
+    ex_six_listItems.classList.add('p-5px') // classi css ai list items
+
 
 });
 
@@ -219,9 +241,13 @@ ex_six_btnCountUp.addEventListener('click', function () {
 
 ex_six_btnCountDown.addEventListener('click', function () {
 
-    count--;
+    if (ex_six_countUl.lastChild !== null) { // Condizione dove verifico se esiste l'ultimo elemento (li) della lista (ul)
 
-    ex_six_countMsg.innerHTML = count;
+        ex_six_countUl.removeChild(ex_six_countUl.lastChild); // Rimuovo l'ultimo elemento della lista (ul)
+
+    };
+
+
 
 });
 
@@ -231,9 +257,11 @@ ex_six_btnCountDown.addEventListener('click', function () {
 
 ex_six_btnReset.addEventListener('click', function () {
 
+    ex_six_countUl.innerHTML = ''; // Reset della lista
+
     count = 0 // Reset variabile contatore (riposto il valore a 0)
 
-    ex_six_countMsg.innerHTML = count; // Reset del contenuto all'elemento di visualizazzione (html msg)
+
 
 });
 
